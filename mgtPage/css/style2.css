@@ -1,0 +1,106 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700|Montserrat:400,700);
+
+body {
+    display: block;
+    place-items: center;
+    background-image: url(https://wallpapers.com/images/hd/4k-white-abstract-waves-i308ljad82204626.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    place-items: center;
+    overflow-x: hidden;
+
+
+}
+
+#about #asp {
+    opacity: 0;
+    transition: ease-in .5s;
+}
+
+#about:hover #asp {
+    opacity: 1;
+    transition: ease-in .5s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+/* Style for the card */
+.card {
+    height: 20%;
+    margin: 5px;
+    float: left;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  .card-title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  .card-text {
+    color: #555;
+  }
+  
+  /* Style for the star rating */
+  .star-rating {
+
+    display: flex;
+    align-items: center;
+  }
+  
+  .fa-star {
+    color:  #555;
+    font-size: 2rem;
+    margin-right: 4px;
+  }
+  
+  .checked {
+    color: gold;
+  }
+  
+  /* Style for the list items */
+  .list-group-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+  
+  /* Style for links in the card body */
+  .card-link {
+    text-decoration: none;
+    color: #007bff;
+    margin-right: 10px;
+  }
+  
+  .card-link:hover {
+    text-decoration: underline;
+  }
+.suite {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+  }
+#div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}  
+img{
+    width: 150px;
+    height: 150px;
+}
+
+  

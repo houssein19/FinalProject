@@ -1,0 +1,520 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700|Montserrat:400,700);
+
+body {
+    display: block;
+    place-items: center;
+    background-image: url(https://wallpapers.com/images/hd/4k-white-abstract-waves-i308ljad82204626.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    place-items: center;
+    overflow-x: hidden;
+
+
+}
+
+
+#about #asp {
+    opacity: 0;
+    transition: ease-in .5s;
+}
+
+#about:hover #asp {
+    opacity: 1;
+    transition: ease-in .5s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+#navtitle {
+    font-family: 'Montserrat', ;
+    font-size: 50px;
+    color: #181818;
+
+}
+
+.navbar {
+
+    margin-bottom: 50px;
+    position: sticky;
+    align-items: start;
+    top: 0px;
+    width: 100%;
+    z-index: 9999;
+
+}
+
+nav.black {
+    background-color: #4fc4cf;
+    position: fixed;
+}
+
+.navtit {
+    color: #ffffff;
+}
+
+/*About Us*/
+.as {
+    width: 800px;
+    margin: 180px 180px 180px 150px;
+}
+
+#astitle {
+    font-size: 50px;
+    font-family: 'Monterrat';
+}
+
+.paragraph {
+    text-align: left;
+    font-family: 'Monterrat';
+}
+
+/*rsln */
+#astit {
+    color: #021825;
+    position: center;
+    font-size: 50px;
+    width: 100%;
+}
+
+#about {
+    text-align: center;
+    background-color: #f5fcfe;
+    color: #000000;
+    font-size: larger;
+    font-weight: 700;
+    align-items: center;
+    padding: 60px;
+    border-radius: 20px;
+    margin: 20px;
+    box-shadow: 5px 5px 5px 5px #994ff39b;
+    transition: .5s;
+    position: relative;
+    display: block;
+    top: 20px;
+    width: 400px;
+    height: 500px;
+    left: 100px;
+    margin-left: 30%;
+    margin-bottom: 250px;
+    background-image: url('https://media.discordapp.net/attachments/1155980624264437811/1156628180094959636/iset.png?ex=6515a96f&is=651457ef&hm=22ff8d51bc70dbca59f8088f2338ef2c4a4eda713955bc721613cfb76b439371&=&width=670&height=676');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Monterrat" !important;
+}
+
+#about:hover {
+    cursor: pointer;
+    transform: scale(1.1) rotate(3deg);
+    box-shadow: 7px 8px 9px 6px #994ff3;
+}
+
+#list-group {
+    text-align: center;
+    width: 700px;
+    position: relative;
+    bottom: 200px;
+    left: 350px;
+    margin: 20px;
+}
+
+#mb3 {
+    width: 500px;
+    margin: auto;
+    position: relative;
+    top: 50px;
+    background-color: #d9ebf1;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+/* Login Sign in */
+body.active {
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+.logsig {
+    width: 180px;
+    height: 50px;
+    font-size: 1.2em;
+    font-weight: 550;
+    border-radius: 15px;
+    margin: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#log {
+    border: 3px solid #000000;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: #ffffff;
+    color: #000000;
+}
+
+#log:hover {
+    background: #000000;
+    color: white;
+    font-size: 22px;
+    box-shadow: 3px 3px 3px #414246;
+}
+
+#sig {
+    border: 3px solid #000000a3;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: #994ff3;
+    color: white;
+
+}
+
+#sig:hover {
+    border: 3px solid #994ff3;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: white;
+    color: #994ff3;
+    font-size: 22px;
+    box-shadow: 3px 3px 3px #091e60;
+}
+
+.textnav {
+    color: #181818;
+    letter-spacing: 2px;
+    font-family: 'Monterrat';
+    transition: all 0.3s;
+}
+
+.textnav:hover {
+    color: #994ff3;
+}
+
+/* Aka Image Scroller */
+#carouselExampleIndicators {
+    margin-left: 120px;
+    margin-bottom: 0px;
+    width: 87.5%;
+    height: 500px;
+
+}
+
+.imagescroll {
+    width: 87.5%;
+    height: 500px;
+}
+
+.repar {
+    background-color: #ffffff00;
+    border: 0;
+}
+
+.fles {
+    margin: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 360px;
+    border: 0;
+    background-color: #41424634;
+}
+
+/* dev management */
+.card-img-top {
+    width: 500px;
+    height: 120px;
+}
+
+.container {
+    width: 800px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    transform: scale(1.5);
+}
+
+.containt {
+    transform: rotate(-90deg);
+    transition: 500ms ease-in-out transform;
+
+}
+
+.card-title {
+    font-size: 15px;
+}
+
+p,
+h5 {
+    color: black;
+    transition: 500ms ease-in-out transform;
+
+}
+
+.card-body {
+    height: 195px;
+    margin-bottom: 0px;
+    transition: 500ms ease-in-out transform;
+
+}
+
+.card-text {
+    height: 10px;
+    display: inline-block;
+}
+
+.single {
+    padding: 0 4rem;
+    display: grid;
+    width: 87.5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+    transition: 500ms ease-in-out width;
+
+}
+
+.single::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, .0, .0, .5);
+    transition: 500ms ease-in-out background-color;
+}
+
+.card {
+    display: block;
+    float: left;
+    margin: 20px 20px 0 0;
+    color: aliceblue;
+    background-color: rgba(0, .0, .0, .7);
+    padding: 0;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, .0, .0, .7);
+    height: 0;
+    overflow: hidden;
+    transform: 1.5s ease-in-out height,
+        1.5s ease-in-out padding;
+}
+
+.btn {
+    opacity: 1;
+
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0, .0, .0, .3);
+    margin-bottom: 120px;
+    transform: scale(1.5);
+    transition: 500ms ease-in-out transform;
+}
+
+.single:nth-child(1) {
+    background-image: url(https://wallpapers.com/images/featured/business-jzw8ax93flqonkce.jpg);
+}
+
+.single:nth-child(2) {
+    background-image: url(https://media.istockphoto.com/id/1253430957/fr/photo/r%C3%A9union-de-coop%C3%A9ration-de-programmeur-de-d%C3%A9veloppeur-professionnel-et-remue-m%C3%A9ninges-et.jpg?s=612x612&w=0&k=20&c=d20JDGfwZ2YAkYf1fj26qgm1t7w0sZnk5GbFmpJ7aX8=);
+
+}
+
+.single:hover {
+    width: 3000px;
+}
+
+.single:hover::before {
+    background-color: rgba(0, .0, .0, .3);
+}
+
+.single:hover .containt {
+    transform: rotate(0deg);
+}
+
+.single:hover h1 {
+    transform: scale(1);
+}
+
+.single:hover .card {
+    height: 65%;
+    padding: 10px;
+}
+
+.single:hover .btn {
+    opacity: 100%;
+    margin: 10px;
+}
+
+.single:hover p {
+    transform: scale(0deg);
+}
+
+.btn {
+    opacity: 0;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(0, 0, 0);
+    margin-top: 120px;
+}
+
+#footext {
+    color: aliceblue;
+    text-align: center;
+    font-family: 'Montserrat';
+    padding-bottom: 5px;
+}
+
+#links {
+    position: center;
+    margin-left: 46.5%;
+    padding-bottom: 10px;
+
+}
+
+.icon {
+    transition: 500ms all;
+}
+
+.icon:hover {
+    transform: scale(1.4);
+}
+
+/* log sig other page */
+.wrapper {
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 440px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 2px 3px 30px rgba(0, 0, 0, 0.36);
+    display: fixed;
+    justify-content: center;
+    margin-top: 13%;
+    margin-left: 40%;
+    scale: 1;
+    z-index: 9999;
+}
+
+#signlink {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.599);
+    font-family: 'Monterrat';
+    font-size: 18px;
+}
+
+#logintitle {
+    text-align: center;
+    font-family: 'Monterrat';
+}
+
+.boxinpt {
+    border-bottom: 2px black solid;
+    padding: 10px;
+    position: relative;
+}
+
+.inpt {
+    border: none;
+    background-color: transparent;
+    font-family: 'Monterrat';
+    outline: none;
+}
+
+.Remember {
+    font-family: 'Monterrat';
+    margin-right: 40px;
+    margin: 20px 20px 0 0px;
+
+}
+
+#logbtn {
+    margin: 20px;
+    width: 300px;
+    height: 50px;
+    font-size: 1.2em;
+    font-weight: 550;
+    border-radius: 15px;
+    font-family: 'Montserrat', sans-serif;
+    border: 3px solid #000000;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: #000000;
+    color: white;
+
+
+}
+
+#logbtn:hover {
+    background: #ffffff;
+    color: #000000;
+    font-size: 22px;
+    box-shadow: 3px 3px 3px #414246;
+}
+
+.formlinks {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.599);
+    font-family: 'Monterrat';
+    font-size: 18px;
+    float: right;
+    margin: 20px 20px 0 0px;
+}
+
+#x {
+    background-color: #000000;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    float: left;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 11px;
+    font-size: 2em;
+    color: #ffffff;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 0px 20px 0px 20px;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+#x:hover {
+    background-color: #ffffff00;
+    color: #000000;
+    border: #000000 2px solid;
+
+}
+
+.fa-x:hover {
+    transform: rotate(-360deg);
+    scale: 0.7;
+
+}
+
+.fa-x {
+    width: 50px;
+    transition: 500ms all;
+
+}
+
+.formsigin {
+    position: absolute;
+    margin-top: 40px;
+
+}
+
+.formlogin {
+    position: absolute;
+    margin-top: 40px;
+}

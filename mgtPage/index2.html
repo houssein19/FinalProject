@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./css/style2.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div style="display: flex; justify-content: space-between;">
+    <button style="position: relative; left: 10px; margin: 10px ;" class="btn btn-primary"><a
+        style="color: white; text-decoration: none;display: flex;align-items: center;" href="../Home/index.html"><i
+          class="bi bi-house-door-fill" style="font-size: 30px;"></i> Back to home</a></button>
+    <h1 style="color: #0077B6; position: relative ; right: 70px; margin: 10px;"> MGT COMPANIES </h1>
+    <div></div>
+  </div>
+
+  <div>
+    <!--1 entreprise-->
+    <div class="card" id="card1" style="width: 18rem;">
+      <img src="logodijika.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">DIGIKA Ez Zahra</h5>
+        <p class="card-text">Nous sommes une entreprise innovante spécialisée dans le secteur de l'informatique et de la
+          communication, dédiée à fournir des solutions de pointe aux entreprises.
+          Offre de Stage : Marketing et Management
+        <p class="suite" id="suite1">
+          Nous recherchons un(e) étudiant(e) talentueux(se) en classe terminale en Marketing, Management ou équivalent
+          pour un stage de 3 mois. Cette opportunité vous permettra de développer des compétences essentielles en
+          marketing tout en contribuant à notre croissance dans le secteur de l'informatique et de la communication.
+          <br>
+          Responsabilités :
+          <br>
+          - Participer à la création de stratégies marketing
+          <br>
+          - Contribuer à la production de contenu marketing de qualité
+          <br>
+          - Aider à la gestion de campagnes digitales
+          <br>
+          - Collaborer avec l'équipe pour développer notre clientèle professionnelle.
+        </p>
+        <a href="#" class="lireLaSuite" onclick="toggleSuite('suite1')">Lire la suite</a>
+        </p>
+      </div>
+      <!--star code-->
+      <div class="card-body">
+        <a href="https://www.digika.tn/" class="card-link">contact</a>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-6">
+              <div class="star-rating">
+                <span class="fa fa-star fa-2x checked"></span>
+                <span class="fa fa-star fa-2x checked"></span>
+                <span class="fa fa-star fa-2x checked"></span>
+                <span class="fa fa-star fa-2x checked"></span>
+                <span class="fa fa-star fa-2x"></span>
+              </div>
+            </div>
+      </ul>
+    </div>
+    <!--2 entreprise-->
+    <div class="card" id="card2" style="width: 15rem;">
+      <img src="smartconseil.png" class="" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Smart Conseil</h5>
+        <p class="card-text">Smart Conseil, éditeur de logiciels en forte croissance dans le domaine de l'Intelligence
+          Artificielle, recrute un(e) stagiaire PFE Community Manager pour renforcer son équipe commerciale.
+          Votre Défi :
+
+        <p class="suite" id="suite2">
+          Élaborer la stratégie des médias sociaux pour notre entreprise.
+          Suivre et établir le planning d’animation des réseaux en 360° selon les temps fort de l’entreprise.
+          Animer les communautés sur Facebook, Twitter, LinkedIn et Instagram : diffuser des contenus, répondre aux
+          questions…
+          Définir le contenu à créer de façon transversale avec notre créateur de contenu
+          Création, gestion, budgétisation et analyse des campagnes publicitaires
+          La veille concurrentielle, analyser les nouvelles tendances
+          La gestion du marketing d’influence
+          Participer à divers projets de communication en soutien de l'équipe marketing <br>
+
+          Votre futur environnement de travail? <br>
+          - Vous travaillerez avec une équipe de 4 personnes de façon transversale. <br>
+          - Poste à pourvoir immédiatement.
+        </p>
+        <a href="#" class="lireLaSuite" onclick="toggleSuite('suite2')">Lire la suite</a>
+        </p>
+      </div>
+      <div class="card-body">
+        <a href="https://www.smarte-conseil.fr/fr/" class="card-link">Contact</a>
+      </div>
+      <!--star code-->
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-6">
+              <div class="star-rating">
+                <span class="fa fa-star fa-2x checked"></span>
+                <span class="fa fa-star fa-2x checked"></span>
+                <span class="fa fa-star fa-2x checked"></span>
+                <span class="fa fa-star fa-2x checked"></span>
+                <span class="fa fa-star fa-2x checked"></span>
+              </div>
+            </div>
+      </ul>
+    </div>
+
+    <!--3 entreprise-->
+    <div class="card" id="card3" style="width: 16rem; height: 100%;">
+      <img src="techex.jpg" class="" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Tech-Expert
+          Tunis</h5>
+        <p class="card-text">Contexte & objectifs
+
+        <p class="suite" id="suite3">
+          Jeune entreprise dynamique et à taille humaine, Tech-Expert est une société de développement et d'infogérance
+          informatique qui accompagne ses clients, de tous secteurs, à faire du digital un réel levier d’accélération de
+          leur business.
+        </p>
+        <a href="#" class="lireLaSuite" onclick="toggleSuite('suite3')">Lire la suite</a>
+        </p>
+      </div>
+      <div class="card-body">
+        <a href="https://tech-expert.io/accueil/" class="card-link">Contact</a>
+      </div>
+      <!--star code-->
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-6">
+              <div class="star-rating">
+                <span class="fa fa-star fa-2x checked"></span>
+                <span class="fa fa-star fa-2x checked"></span>
+                <span class="fa fa-star fa-2x checked"></span>
+                <span class="fa fa-star fa-2x checked"></span>
+                <span class="fa fa-star fa-2x checked"></span>
+              </div>
+            </div>
+      </ul>
+    </div>
+    <!--4 entreprise-->
+    <div class="card" id="card4" style="width: 20rem;">
+      <img src="gcds.jpg" class="" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">LES GRANDES CARRIERES DU SAHEL
+          Tunis</h5>
+        <p class="card-text">Société Anonyme sise à Mutuelle ville , à la recherche d'une jeune stagiaire rigoureuse et
+          organisée de la zone de Tunis. <br>
+          Formation: comptabilité , Finance - commerce <br>
+          Qualification:
+
+        <p class="suite" id="suite4">
+          • maîtriser les outils informatiques, notamment les logiciels de bureautique et de comptabilité ; <br>
+          Niveau : Bac +3 , BTP - BTS <br>
+          Durée : 2 mois <br>
+          Service: comptabilité - Achat - vente - Ressources humaines <br>
+          Mission: <br>
+          classement et l'archivage des pièces comptables. <br>
+          • la réception des factures ; <br>
+          • le traitement des factures
+        </p>
+        <a href="#" class="lireLaSuite" onclick="toggleSuite('suite4')">Lire la suite</a>
+        </p>
+      </div>
+      <div class="card-body">
+        <a href="https://www.annuairepro-tunisie.com/les-grandes-carrieres-du-sahel-tunis-tunisie.html"
+          class="card-link">Contact</a>
+      </div>
+      <!--star code-->
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-6">
+              <div class="star-rating">
+                <span class="fa fa-star fa-2x checked"></span>
+                <span class="fa fa-star fa-2x checked"></span>
+                <span class="fa fa-star fa-2x checked"></span>
+                <span class="fa fa-star fa-2x"></span>
+                <span class="fa fa-star fa-2x"></span>
+              </div>
+            </div>
+      </ul>
+    </div>
+    <!--5 entreprise-->
+    <div class="card" id="card5" style="width: 18rem;">
+      <img src="onetech.jpg" class="" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">OneTech Group Bizert</h5>
+        <p class="card-text">
+          Dans le cadre du renforcement de son équipe, Fuba Tunisie filiale du groupe One tech, basée à Bizerte (El Azib
+          - Menzel Djemil et opérant dans le secteur automobile souhaite recruter un(e)ingénieur assistance
+          clients).<br>
+          Profil demandé:
+        <p class="suite" id="suite5">
+          eune diplômé(e) de formation ingénieur, spécialité : génie industriel ou équivalent,
+          Un premier stage significatif dans un milieu industriel serait un atout
+        </p>
+        <a href="#" class="lireLaSuite" onclick="toggleSuite('suite5')">Lire la suite</a>
+        </p>
+      </div>
+      <div class="card-body">
+        <a href="https://onetech-group.com/" class="card-link">Contact</a>
+      </div>
+      <!--star code-->
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-6">
+              <div class="star-rating">
+                <span class="fa fa-star fa-2x checked"></span>
+                <span class="fa fa-star fa-2x checked"></span>
+                <span class="fa fa-star fa-2x checked"></span>
+                <span class="fa fa-star fa-2x checked"></span>
+                <span class="fa fa-star fa-2x checked"></span>
+              </div>
+            </div>
+      </ul>
+    </div>
+  </div>
+
+
+
+  <script src="./js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,425 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700|Montserrat:400,700);
+
+body {
+    background-image: url(https://wallpapers.com/images/hd/4k-white-abstract-waves-i308ljad82204626.jpg) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/*nav*/
+.rotate {
+    background-color: rebeccapurple;
+
+
+}
+
+.nav {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+
+}
+
+.btnnn {
+    background-color: transparent;
+    border: 0;
+    transition: 1s ease;
+    cursor: pointer;
+    margin: 5px;
+    width: 5%;
+
+    height: 90px;
+}
+
+.btnn {
+    width: 5%;
+    height: 90px;
+    margin: 5px;
+    background-color: transparent;
+    border: 0;
+    rotate: 90deg;
+    cursor: pointer;
+    scale: 0.5;
+    transition: 1s ease;
+}
+
+#fa {
+    transform: scale(5);
+}
+
+.tab {
+    background-color: rgba(0, 0, 0, 0.867) !important;
+    width: 15%;
+    height: 100%;
+    color: aqua;
+    font-size: 30px;
+    float: left;
+    margin-top: 100px;
+    backdrop-filter: blur(5px);
+}
+
+#fa {
+    width: 15px;
+    height: 15px;
+}
+
+.kmela {
+    font-size: 50px;
+    margin-top: 10px;
+    color: white;
+}
+
+.kmelahov {
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.lien {
+    text-decoration: none;
+    cursor: pointer;
+    color: aqua;
+    transition: 1s all;
+    font-family: "monterrat";
+}
+
+.lien:hover {
+    color: rgb(0, 0, 0);
+}
+
+/*profile*/
+#profile {
+    float: right;
+    display: flex;
+    margin-left: 80%;
+    margin-top: 8px;
+    background-color: transparent;
+    border: 0;
+    position: relative;
+
+}
+
+#profimg {
+    width: 90px;
+    height: 90px;
+    border-radius: 180px;
+
+}
+
+#prof {
+    background-color: rgba(0, 0, 0, 0.699);
+    width: 300px;
+    height: 150px;
+    position: fixed;
+    left: 84.35%;
+    border-radius: 0px 0px 0px 10px;
+    display: none;
+    top: 100px;
+    z-index: 9999;
+
+}
+
+#esmprof {
+    margin: 6px;
+}
+
+#esmprof:hover {
+    background-color: rgba(173, 168, 168, 0.394);
+    border: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.opa {
+    display: block !important;
+}
+
+/*add company*/
+/*div add*/
+.add {
+    background-color: rgba(0, 0, 0, 0.725);
+    backdrop-filter: blur(10px);
+    width: 35%;
+    height: 400px;
+    left: 37%;
+    top: 19%;
+    display: none;
+    position: fixed;
+    text-align: center;
+    z-index: 9999;
+    border-radius: 20PX;
+    padding-top: 20px;
+
+
+}
+
+#addtit {
+    color: #ffffff;
+    font-size: 50px;
+    font-family: 'monterrat';
+
+
+}
+
+
+
+
+
+.boxinpt {
+    border-bottom: 2px black solid;
+    padding: 10px;
+    position: relative;
+}
+
+.inpt {
+    border: none;
+    background-color: transparent;
+    font-family: 'Monterrat';
+    outline: none;
+    color: #ffffff;
+}
+
+#logbtn {
+    margin: 20px;
+    width: 300px;
+    height: 50px;
+    font-size: 30px;
+    font-weight: 550;
+    border-radius: 15px;
+    font-family: 'Montserrat', sans-serif;
+    border: 3px solid #000000;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: #000000;
+    color: white;
+
+}
+
+#logbtn:hover {
+    background: #ffffff;
+    color: #000000;
+    font-size: 22px;
+    box-shadow: 3px 3px 3px #414246;
+}
+
+#x {
+    background-color: #000000;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    float: left;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 11px;
+    font-size: 50px;
+    color: #ffffff;
+    overflow: hidden;
+    border-radius: 0px 20px 0px 20px;
+    cursor: pointer;
+    left: 89.3%;
+
+}
+
+#x:hover {
+    background-color: #ffffff00;
+    color: #000000;
+    border: #000000 2px solid;
+    background-color: #00000000;
+
+
+
+}
+
+.fa-x:hover {
+    transform: rotate(-360deg);
+    scale: 0.4;
+    box-shadow: 20px 30px 50px rgb(0, 0, 0);
+    background-color: #00000000;
+
+
+}
+
+.fa-x {
+    width: 50px;
+    scale: 0.5;
+    transition: 500ms all;
+
+}
+
+/*lekwaret taa cheriket*/
+.contcard {
+    margin-left: 90px;
+    margin-top: 50px;
+}
+
+.trash {
+    color: #ff000024;
+    position: absolute;
+    left: 88%;
+    margin: 5px;
+    transition: 500ms color;
+    cursor: pointer;
+}
+
+.trash:hover {
+    color: #ff0000;
+}
+
+.title {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Monterrat';
+}
+
+.content {
+
+    font-size: 30px;
+    width: 100%;
+
+
+}
+
+.card {
+    width: 18rem !important;
+    display: inline-block !important;
+    margin: 5px !important;
+    height: 500px !important;
+}
+
+.card-title {
+    height: 24px !important;
+    width: 100px !important;
+    position: relative !important;
+
+}
+
+.card-text {
+    height: 90px !important;
+    width: 254px !important;
+    overflow: hidden;
+}
+
+.card-body {
+    height: 215.5px !important;
+    width: 286px !important;
+}
+
+.card-img-top {
+    width: 286px !important;
+    height: 286px !important;
+}
+
+.plusbtn {
+    float: right;
+    border: 2px;
+    border-radius: 20px 0px 0px 20px;
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    font-size: 30px;
+    color: #ffffff;
+    margin-top: 20px;
+
+
+}
+
+.disp {
+    display: flex;
+}
+
+.scl {
+    position: relative;
+    width: 20px;
+    height: 0px;
+    scale: 0.2;
+    top: 2px;
+
+}
+
+.checked {
+    color: orange;
+}
+
+/*Tableau*/
+table {
+    width: 90%;
+    height: 300px;
+    background-color: #994ff337;
+    border-radius: 20px !important;
+    margin: auto;
+
+}
+
+td {
+    border: 1px solid #000000 !important;
+    padding: 10px;
+}
+
+.container {
+
+    background-color: rgb(177, 8, 8);
+    width: 50px;
+    height: 90px;
+    border-radius: 40px;
+    margin-top: 50px;
+    transition: all 500ms ease;
+    scale: 0.5;
+}
+
+.circ {
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    border-radius: 180px;
+    float: left;
+    transition: all 500ms ease;
+    scale: 1.15;
+}
+
+.circc {
+    float: right;
+    background-color: white;
+    transition: all 500ms ease;
+
+
+}
+
+.containers {
+    background-color: green;
+    transition: all 500ms ease;
+}
+
+/*footer*/
+footer {
+    background-color: rgb(0, 0, 0);
+    margin-top: 120px;
+}
+
+#footext {
+    font-size: 15px;
+    color: aliceblue;
+    text-align: center;
+    font-family: 'Montserrat';
+    padding-bottom: 5px;
+}
+
+#links {
+    position: center;
+    margin-left: 46%;
+    padding-bottom: 10px;
+
+}
+
+.icon {
+    transition: 500ms all;
+}
+
+.icon:hover {
+    transform: scale(1.4);
+}

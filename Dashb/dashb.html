@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashB</title>
+    <link rel="stylesheet" href="./css/dashbstyle.css">
+    <script src="https://kit.fontawesome.com/31625fef3f.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="./js/dashb.js"></script>
+</head>
+
+<body id="body">
+    <!--Nav-->
+    <div class="nav" style="display: flex;">
+        <div style="position: absolute; left: 20px;">
+            <button class="btnnn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+                aria-controls="offcanvasScrolling" id="btnn" onclick="closing()">
+                <img src="gg.png" id="fa">
+
+            </button>
+
+            <span class="kmela" id="kmela" style="position: absolute;left: 60px;top: 4px;">OOGLE</span>
+        </div>
+
+        <button id="profile" onclick="profl()" style="position: relative;left: 13%;">
+            <img src="3.jpg" id="profimg">
+        </button>
+
+
+        <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasTopLabel">Offcanvas top</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                ...
+            </div>
+        </div>
+    </div>
+
+    <div class="tab offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+        id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasScrollingLabel" style="font-size: 50px;color: #ffffff;">ISETCH</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
+                onclick="closing()"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p><a href="#mgt" class="lien">
+                    <i class="fa-solid fa-business-time" style="color: #ffffff;"></i>
+                    Societe Management</a></p>
+            <p><a href="#ti" class="lien">
+                    <i class="fa-solid fa-laptop-code" style="color: #ffffff;"></i>
+                    Societe Devloppement</a></p>
+            <p><a href="#tabl" class="lien">
+                    <i class="fa-solid fa-users-gear" style="color: #ffffff;"></i>
+                    Gestion Des Utilisateurs</a></p>
+        </div>
+    </div>
+    <div id="prof">
+        <div id="esmprof"><img src="3.jpg" id="profimg"
+                style="width: 50px;height: 50px; border-radius: 180px;margin-left: 15px;">
+            <span style="color: aliceblue;">Chloe Coutau</span>
+        </div>
+        <hr style="color: rgb(255, 255, 255);border: 1px solid;margin-left: 10px;">
+        <a href="../Home/index.html">
+            <button type="button" class="btn btn-outline-danger" style="margin-left: 20px;">Disconnect</button>
+        </a>
+    </div>
+    <!--mgt company-->
+    <div class="content" id="content">
+        <!--div add mgt company-->
+        <!--add mgt-->
+        <div class="add" id="addmgt">
+            <button id="x" onclick="clsmgt()"><i class="fa-solid fa-x"></i></button>
+            <span id="addtit">Add Societe MGT</span>
+            <div style="width: 90%;margin-left: 20px;">
+                <div class="boxinpt">
+                    <span class="icn"><i class="fa-solid fa-image" style="color: #e2e4e2;"></i></i></i></span>
+                    <input type="text" placeholder="Image Link" required class="inpt" id="taswira">
+                </div>
+
+                <div class="boxinpt">
+                    <span class="icn"><i class="fa-solid fa-building" style="color: #e2e4e2;"></i></i></span>
+                    <input type="text" placeholder="Name" required class="inpt" id="nom">
+                </div>
+
+                <div class="boxinpt">
+                    <span class="icn"><i class="fa-solid fa-info" style="color: #e2e4e2;"></i></i></span>
+                    <input type="text" placeholder="Details" required class="inpt" id="details">
+                </div>
+
+                <button id="logbtn" onclick="addmgt()">ADD</button>
+            </div>
+
+
+        </div>
+        <div>
+            <a name="mgt"></a>
+            <h1 class="title" style="margin-top: 150px;">Societes Management</h1>
+        </div>
+        <button class="plusbtn" onclick="clsmgt()">+</button>
+        <div class="contcard" id="contcardmgt">
+            <div class="card" id="mgt1">
+                <i class="fa-solid fa-trash trash" onclick="deleteItem('mgt1')"></i>
+                <img src="https://marketplace.canva.com/EAE0rNNM2Fg/1/0/1600w/canva-letter-c-trade-marketing-logo-design-template-r9VFYrbB35Y.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <div class="disp">
+                        <h5 class="card-title">Card title</h5>
+                        <span class="fa fa-star fa-3x checked scl"></span>
+                        <span class="fa fa-star fa-3x checked scl"></span>
+                        <span class="fa fa-star fa-3x checked scl"></span>
+                        <span class="fa fa-star fa-3x scl"></span>
+                        <span class="fa fa-star fa-3x scl"></span>
+                    </div>
+                    <p class="card-text">Some quick example text ...</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card" id="mgt2">
+                <i class="fa-solid fa-trash trash" onclick="deleteItem('mgt2')"></i>
+                <img src="https://cdn.logojoy.com/wp-content/uploads/2018/05/01104710/1267.png" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <div class="disp">
+                        <h5 class="card-title">Card title</h5>
+                        <span class="fa fa-star fa-3x checked scl"></span>
+                        <span class="fa fa-star fa-3x checked scl"></span>
+                        <span class="fa fa-star fa-3x checked scl"></span>
+                        <span class="fa fa-star fa-3x checked scl"></span>
+                        <span class="fa fa-star fa-3x checked scl"></span>
+                    </div>
+                    <p class="card-text">Some quick example text ...</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card" id="mgt3">
+                <i class="fa-solid fa-trash trash" onclick="deleteItem('mgt3')"></i>
+                <img src="https://images-platform.99static.com//nlgsyuBTe7UV0HvYPJYUx-B06l0=/660x131:1200x671/fit-in/590x590/99designs-contests-attachments/32/32387/attachment_32387923"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <div class="disp">
+                        <h5 class="card-title">Card title</h5>
+                        <span class="fa fa-star fa-3x checked scl"></span>
+                        <span class="fa fa-star fa-3x checked scl"></span>
+                        <span class="fa fa-star fa-3x  scl"></span>
+                        <span class="fa fa-star fa-3x  scl"></span>
+                        <span class="fa fa-star fa-3x  scl"></span>
+                    </div>
+                    <p class="card-text">Some quick example text ...</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+
+        </div>
+        <div>
+            <a name="ti"></a>
+            <h1 class="title">Societes TI</h1>
+        </div>
+        <!--add TI-->
+        <div class="add" id="addti">
+            <button id="x" onclick="clsti()"><i class="fa-solid fa-x"></i></button>
+            <span id="addtit">Add Societe TI</span>
+
+            <div style="width: 90%;margin-left: 20px;">
+                <div class="boxinpt">
+                    <span class="icn"><i class="fa-solid fa-image" style="color: #e2e4e2;"></i></i></i></span>
+                    <input type="text" placeholder="Image Link" required class="inpt" id="taswirati">
+                </div>
+
+                <div class="boxinpt">
+                    <span class="icn"><i class="fa-solid fa-building" style="color: #e2e4e2;"></i></i></span>
+                    <input type="text" placeholder="Name" required class="inpt" id="nomti">
+                </div>
+
+                <div class="boxinpt">
+                    <span class="icn"><i class="fa-solid fa-info" style="color: #e2e4e2;"></i></i></span>
+                    <input type="text" placeholder="Details" required class="inpt" id="detailsti">
+                </div>
+
+                <button id="logbtn" onclick="addti()">ADD</button>
+            </div>
+        </div>
+        <button class="plusbtn" onclick="clsti()">+</button>
+        <div class="contcard" id="contcardti">
+            <div class="card" id="ti1">
+                <i class="fa-solid fa-trash trash" onclick="deleteItem('ti1')"></i>
+                <img src="https://steamuserimages-a.akamaihd.net/ugc/1753561907020044496/4C1784351936300855776017A158A7B2BD609AD1/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <div class="disp">
+                        <h5 class="card-title">Card title</h5>
+                        <span class="fa fa-star fa-3x checked scl"></span>
+                        <span class="fa fa-star fa-3x checked scl"></span>
+                        <span class="fa fa-star fa-3x checked scl"></span>
+                        <span class="fa fa-star fa-3x checked scl"></span>
+                        <span class="fa fa-star fa-3x checked scl"></span>
+                    </div>
+                    <p class="card-text">Some quick example text ...</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card" id="ti2">
+                <i class="fa-solid fa-trash trash" onclick="deleteItem('ti2')"></i>
+                <img src="https://static.vecteezy.com/system/resources/previews/021/495/921/original/dell-logo-brand-computer-symbol-black-design-usa-laptop-illustration-with-blue-background-free-vector.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <div class="disp">
+                        <h5 class="card-title">Card title</h5>
+                        <span class="fa fa-star fa-3x checked scl"></span>
+                        <span class="fa fa-star fa-3x checked scl"></span>
+                        <span class="fa fa-star fa-3x checked scl"></span>
+                        <span class="fa fa-star fa-3x  scl"></span>
+                        <span class="fa fa-star fa-3x  scl"></span>
+                    </div>
+                    <p class="card-text">Some quick example text ...</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card" id="ti3">
+                <i class="fa-solid fa-trash trash" onclick="deleteItem('ti3')"></i>
+                <img src="https://cdn.logojoy.com/wp-content/uploads/20230530114020/AI-Logo-8.png" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <div class="disp">
+                        <h5 class="card-title">Card title</h5>
+                        <span class="fa fa-star fa-3x checked scl"></span>
+                        <span class="fa fa-star fa-3x  scl"></span>
+                        <span class="fa fa-star fa-3x  scl"></span>
+                        <span class="fa fa-star fa-3x scl"></span>
+                        <span class="fa fa-star fa-3x scl"></span>
+                    </div>
+                    <p class="card-text">Some quick example text ...</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <!--gestion users-->
+        <a name="tabl"></a>
+        <h1 class="title">Gestion des utilisateurs </h1>
+        <table>
+            <tr
+                style="color: #ffffff ;background-color: #000000; text-align: center; font-size:large; font-family:'Courier New', Courier, monospace; font-weight:bolder;">
+                <td>Id</td>
+                <td>Name Role</td>
+                <td>Admin Role</td>
+            </tr>
+            <tr>
+                <td>0001</td>
+                <td>Louay Abdelkader</td>
+                <td>
+                    <button class="container" id="container1" onclick="jareb('circ1','container1')">
+                        <div class="circ" id="circ1"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>1907</td>
+                <td>Laribi Youssef</td>
+                <td>
+                    <button class="container" id="container2" onclick="jareb('circ2','container2')">
+                        <div class="circ" id="circ2"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>2222</td>
+                <td>Youssef ben salah</td>
+                <td>
+                    <button class="container" id="container3" onclick="jareb('circ3','container3')">
+                        <div class="circ" id="circ3"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>3333</td>
+                <td>Houssain ben chikh</td>
+                <td>
+                    <button class="container" id="container4" onclick="jareb('circ4','container4')">
+                        <div class="circ" id="circ4"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>4070</td>
+                <td>Ryslen Neji</td>
+                <td>
+                    <button class="container" id="container5" onclick="jareb('circ5','container5')">
+                        <div class="circ" id="circ5"></div>
+                </td>
+            </tr>
+        </table>
+        <!--footer-->
+        <footer>
+            <div id="footext">ISETCH SOCIAL MEDIA</div>
+            <div id="links">
+                <a href="..." style="text-decoration: none;">
+                    <img width="40" height="40" src="https://img.icons8.com/color/48/facebook-new.png"
+                        alt="facebook-new" class="icon" />
+                </a>
+                <a href="..." style="text-decoration: none;">
+                    <img width="40" height="40" src="https://img.icons8.com/color/48/instagram-new--v1.png"
+                        alt="instagram-new--v1" class="icon" />
+                </a>
+                <a href="..." style="text-decoration: none;">
+                    <img width="40" height="40" src="https://img.icons8.com/color/48/tiktok--v1.png" alt="tiktok--v1"
+                        class="icon" />
+
+            </div>
+        </footer>
+</body>
+
+</html>

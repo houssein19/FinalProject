@@ -1,0 +1,100 @@
+/* Style for the card */
+.card {
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 18rem;
+    height: 100%;
+    margin-right: 10px;
+    background-color: white !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  .card-title {
+    font-size: 1.5rem;
+  }
+  
+  .card-text {
+    color: #555;
+  }
+  
+  /* Style for the star rating */
+  .star-rating {
+
+    display: flex;
+    align-items: center;
+  }
+  
+  .fa-star {
+    color:  #555;
+    font-size: 2rem;
+    margin-right: 4px;
+  }
+  
+  .checked {
+    color: gold;
+  }
+  
+  /* Style for the list items */
+  .list-group-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+  
+  /* Style for links in the card body */
+  .card-link {
+    text-decoration: none;
+    color: #007bff;
+    margin-right: 10px;
+  }
+  
+  .card-link:hover {
+    text-decoration: underline;
+  }
+
+#suite {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+  }
+  
+body{
+    background-image: url(https://wallpapers.com/images/hd/4k-white-abstract-waves-i308ljad82204626.jpg) !important;
+}
+#div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.card {
+    width: 18rem;
+    height: 100%;
+    margin-right: 10px;
+    background-color: white !important;
+}
+
+.suite {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+} 
+h1{
+    text-align: center;
+}
+img{
+    width: 150px;
+    height: 150px;
+
+}
+
+h5{
+  font-weight: bold;
+}
+
+h1{
+  font-weight: bold;
+}

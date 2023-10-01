@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>First project</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="./js/script.js"></script>
+  <script src="https://kit.fontawesome.com/31625fef3f.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="ct">
+  <!--Navbar w login-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" style="display: inline-block; position: sticky;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" id="navtitle">ISETCH</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active textnav" aria-current="page" href="#">Home</a>
+          <a class="nav-link textnav" href="#as">About us </a>
+          <a class="nav-link textnav" href="#Q&A">Q&A</a>
+          <a class="nav-link textnav" href="#fb">FeedBack</a>
+        </div>
+      </div>
+
+      <a href="../LogSig/logsig.html"><button class="logsig" id="sig">Login/Signup</button></a>
+    </div>
+  </nav>
+  <!--tsawer taa about us (slider)-->
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+
+    <div class="carousel-indicators caraousel slide" data-bs-interval="2 ">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active fles"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"
+        class="fles"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"
+        class="fles"></button>
+    </div>
+    <div class="carousel-inner" data-ride="caraousel">
+      <div class="carousel-item active">
+        <img
+          src="https://static.vecteezy.com/ti/photos-gratuite/p2/8571422-femme-comptable-d-entreprise-utilisant-une-calculatrice-pour-faire-des-maths-finance-sur-un-bureau-en-bois-au-bureau-et-des-fonds-de-travail-en-comptabilite-fiscale-statistiques-et-concept-de-recherche-analytique-gratuit-photo.jpg"
+          class="d-block w-100 imagescroll" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://images.pexels.com/photos/7794041/pexels-photo-7794041.jpeg?cs=srgb&dl=pexels-yan-krukau-7794041.jpg&fm=jpg"
+          class="d-block w-100 imagescroll" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.solutions.kompass.com/app/uploads/1/2019/01/home_6-1920x1120.jpg"
+          class="d-block w-100 imagescroll" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev repar" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next repar" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+      <a name="as"></a>
+    </button>
+  </div>
+  </button>
+  </div>
+
+  <!-- -->
+
+  <!--About us-->
+  <!--<a name="as"></a>
+     <div class="as">
+      <h2 id="astitle">About Us</h2>
+      <p class="paragraph">
+      The About Us page of your website is an essential source of information for all who want to know more about your business.
+      About Us pages are where you showcase your history, what is unique about your work, your company’s values, and who you serve.
+      The design, written content, and visual or video elements together tell an important story about who you are and why you do it. 
+    </p>
+    </div>-->
+
+  <div id="about">
+    <div id="astit">
+      <h2>ABOUT US</h2><br>
+    </div>
+    <p id="asp">We google club isetch members helping students search for stages opportunities <br>Wes helping students
+      search for stages opportunities <br>We google club isetch members helping students search for stages opportunities
+    </P>
+  </div>
+
+  <!-- dev wl management  -->
+  <div class="container">
+    <div class="single">
+      <div class="containt">
+        <h1>Management</h1>
+
+        <div class="card-group">
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1612810806546-ebbf22b53496?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">CompanyName</h5>
+              <p class="card-text">This is a wider card with supporting text below .</p>
+              <button type="button" class="btn btn-info">
+
+                WebSite</button></small>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1612810806546-ebbf22b53496?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">CompanyName</h5>
+              <p class="card-text">This is a wider card with supporting text below .
+                ....</p>
+              <p class="card-text"><small class="text-body-secondary">
+                  <button type="button" class="btn btn-info">WebSite</button></small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1612810806546-ebbf22b53496?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">CompanyName</h5>
+              <p class="card-text">This is a wider card with supporting text below .
+                ...</p>
+              <p class="card-text"><small class="text-body-secondary">
+                  <button type="button" class="btn btn-info">WebSite</button></small></p>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn btn-outline-info"><a href="../mgtPage/index2.html"
+            style="color: white;text-decoration: none;">Plus d'info</a></button>
+      </div>
+    </div>
+    <div class="single">
+      <div class="containt">
+        <h1>Devloppement</h1>
+        <div class="card-group">
+          <div class="card">
+            <img
+              src="https://media.wired.co.uk/photos/606d9a3ba876dd2203a639aa/4:3/w_2664,h_1998,c_limit/wired-uk-google-watching.jpg"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">CompanyName</h5>
+              <p class="card-text">This is a wider card with supporting text below .</p>
+              <button type="button" class="btn btn-info">WebSite</button></small>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://media.wired.co.uk/photos/606d9a3ba876dd2203a639aa/4:3/w_2664,h_1998,c_limit/wired-uk-google-watching.jpg"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">CompanyName</h5>
+              <p class="card-text">This is a wider card with supporting text below .
+                ....</p>
+              <p class="card-text"><small class="text-body-secondary">
+                  <button type="button" class="btn btn-info">WebSite</button></small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://media.wired.co.uk/photos/606d9a3ba876dd2203a639aa/4:3/w_2664,h_1998,c_limit/wired-uk-google-watching.jpg"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">CompanyName</h5>
+              <p class="card-text">This is a wider card with supporting text below .
+                ...</p>
+              <p class="card-text"><small class="text-body-secondary">
+                  <button type="button" class="btn btn-info">WebSite</button></small></p>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn btn-outline-info"><a href="../ti-main/ti.html"
+            style="color: white;text-decoration: none;">Plus d'info</a></button>
+
+      </div>
+    </div>
+
+
+  </div>
+
+  <div style="background-color:rgba(0, 0, 0, 0.923); color: aliceblue; margin-bottom: 150px;"> &emsp; <a name="Q&A"></a>
+  </div>
+  <!--rsln-->
+
+  <h1 style="text-align: center; color: #0077B6;" id="quizz">Q&A</h1> <br>
+  <div style="display: flex; justify-content:space-evenly;">
+    <div class="qanda-container" style="position: relative;top: 40px;">
+      <div class="list-group">
+        <button type="button" class="list-group-item list-group-item-action active" aria-current="true">
+          Lorem ipsum dolor sit amet consectetur ? </button>
+      </div>
+      <div class="list-group">
+        <button type="button" class="list-group-item list-group-item-action active" aria-current="true">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit ? </button>
+      </div>
+      <div class="list-group">
+        <button type="button" class="list-group-item list-group-item-action active" aria-current="true">
+          Lorem ipsum dolor sit amet consectetur adipisicing ?
+        </button>
+      </div>
+    </div>
+
+    <!-- Q&A section -->
+    <div class="qanda-container">
+      <div class="qa-box">
+        <h3>Q1: Lorem ipsum dolor sit amet consectetur ?</h3>
+        <p>A1: Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolor provident ullam corporis
+          totam.</p>
+      </div>
+      <div class="qa-box">
+        <h3>Q2: Lorem ipsum dolor sit amet consectetur adipisicing elit ?</h3>
+        <p>A2: Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolor provident ullam corporis.</p>
+      </div>
+      <div class="qa-box">
+        <h3>Q3: Lorem ipsum dolor sit amet consectetur adipisicing ?
+        </h3>
+        <p>A3: Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolor provident ullam.
+        </p>
+      </div>
+    </div> <a name="fb"></a>
+
+  </div>
+  <h1 style="text-align: center; position: relative; top:50px ; color: #00B4D8;" id="feed">Feedback</h1><br>
+  <div class="mb-3" id="mb3">
+    <label for="exampleFormControlInput1" class="form-label">Name</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder=""
+      style="background-color: aliceblue;">
+    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"
+      style="background-color: aliceblue;">
+
+    <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+      style="background-color: aliceblue;"></textarea> <br>
+    <div style="text-align: center;"><button type="submit" class="btn btn-outline-primary"
+        style="z-index: 1;opacity: 1;">Send</button>
+    </div>
+
+  </div>
+
+  <!--Footer-->
+  <footer>
+    <div id="footext">ISETCH SOCIAL MEDIA</div>
+    <div id="links">
+      <a href="..." style="text-decoration: none;">
+        <img width="40" height="40" src="https://img.icons8.com/color/48/facebook-new.png" alt="facebook-new"
+          class="icon" />
+      </a>
+      <a href="..." style="text-decoration: none;">
+        <img width="40" height="40" src="https://img.icons8.com/color/48/instagram-new--v1.png" alt="instagram-new--v1"
+          class="icon" />
+      </a>
+      <a href="..." style="text-decoration: none;">
+        <img width="40" height="40" src="https://img.icons8.com/color/48/tiktok--v1.png" alt="tiktok--v1"
+          class="icon" />
+
+    </div>
+  </footer>
+</body>
+
+</html>
